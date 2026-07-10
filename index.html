@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baybos Foods — A Hundred Treasures for Your Pantry · 百寶食品</title>
+<meta name="description" content="Baybos Foods — premium sushi rice, soy sauce and wasabi sachets. Asian pantry staples with new-generation energy. 百寶食品.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,400;0,600;0,800;1,600&family=Noto+Sans+TC:wght@700;900&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%231F3A5F'/><path d='M14 24 Q23 15 32 23 T50 23 M14 34 Q23 25 32 33 T50 33 M14 44 Q23 35 32 43 T50 43' stroke='white' stroke-width='4.5' fill='none' stroke-linecap='round'/></svg>">
+<style>
+:root{
+  --navy:#1F3A5F; --navy-deep:#16294A; --cream:#FFF7EA; --paper:#FFFDF7;
+  --red:#E23D2E; --gold:#F5C400; --matcha:#7CB342; --kelly:#2E9E4F; --ink:#22293A;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Archivo',system-ui,sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden}
+.tc{font-family:'Noto Sans TC',sans-serif}
+h1,h2,h3,.disp{font-family:'Archivo Black','Archivo',sans-serif;line-height:1.02;letter-spacing:-.01em}
+img{max-width:100%;display:block}
+a{color:inherit}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:var(--cream);border-bottom:3px solid var(--navy);padding:14px 5vw;display:flex;align-items:center;gap:14px}
+nav .logo{display:flex;align-items:center;gap:12px;font-family:'Archivo Black';font-size:1.15rem;color:var(--navy);text-decoration:none}
+nav .logo svg{width:42px;height:42px}
+nav .links{margin-left:auto;display:flex;gap:26px;align-items:center;font-weight:800;font-size:.95rem}
+nav .links a{text-decoration:none;color:var(--navy)}
+nav .links a:hover{color:var(--red)}
+nav .cta{background:var(--red);color:#fff!important;padding:10px 20px;border-radius:999px;border:3px solid var(--navy);box-shadow:3px 3px 0 var(--navy);transition:.15s}
+nav .cta:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--navy);color:#fff!important}
+@media(max-width:720px){nav .links a:not(.cta){display:none}}
+
+/* hero */
+.hero{position:relative;background:var(--navy);color:var(--cream);padding:9vh 5vw 0;overflow:hidden}
+.hero .rays{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 120%, #24457A 0deg 15deg, var(--navy) 15deg 30deg);opacity:.5}
+.hero-inner{position:relative;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6.2vw,5rem);color:#fff}
+.hero h1 .hl{color:var(--gold)}
+.hero .kicker{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--navy);font-weight:800;padding:7px 16px;border-radius:999px;border:3px solid var(--navy-deep);margin-bottom:1.2rem;transform:rotate(-2deg);font-size:.95rem}
+.hero p.sub{margin:1.3rem 0 2rem;font-size:1.15rem;max-width:34rem;color:#DCE6F5;line-height:1.65}
+.hero .btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:4rem}
+.btn{display:inline-block;text-decoration:none;font-weight:800;padding:15px 28px;border-radius:999px;border:3px solid var(--navy-deep);transition:.15s;font-size:1rem}
+.btn.primary{background:var(--red);color:#fff;box-shadow:4px 4px 0 var(--navy-deep)}
+.btn.ghost{background:transparent;color:#fff;border-color:#fff}
+.btn:hover{transform:translate(-2px,-2px)}
+.btn.primary:hover{box-shadow:6px 6px 0 var(--navy-deep)}
+.hero-art{position:relative;min-height:420px}
+.hero-art img{position:absolute;border-radius:10px}
+.hero-art .bag{width:62%;left:0;top:4%;transform:rotate(-4deg);z-index:2;border-radius:14px;box-shadow:0 24px 40px rgba(0,0,0,.4)}
+.hero-art .s1{width:52%;right:-2%;top:16%;transform:rotate(7deg);z-index:3;border:4px solid #fff;box-shadow:0 18px 30px rgba(0,0,0,.45)}
+.hero-art .s2{width:52%;right:8%;top:52%;transform:rotate(-6deg);z-index:4;border:4px solid #fff;box-shadow:0 18px 30px rgba(0,0,0,.45)}
+@media(max-width:880px){.hero-inner{grid-template-columns:1fr}.hero-art{min-height:340px;margin-bottom:2rem}}
+
+/* marquee */
+.marquee{background:var(--gold);border-top:3px solid var(--navy);border-bottom:3px solid var(--navy);overflow:hidden;white-space:nowrap;padding:12px 0;position:relative;z-index:5}
+.marquee span{display:inline-block;font-family:'Archivo Black';font-size:1.05rem;color:var(--navy);animation:scroll 28s linear infinite;padding-right:0}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding:5.5rem 5vw}
+.wrap{max-width:1200px;margin:0 auto}
+.eyebrow{display:inline-block;background:var(--navy);color:var(--gold);font-weight:800;font-size:.85rem;letter-spacing:.12em;padding:6px 14px;border-radius:6px;margin-bottom:1rem;transform:rotate(-1.5deg)}
+h2.title{font-size:clamp(2rem,4.4vw,3.2rem);color:var(--navy);margin-bottom:.6rem}
+p.lead{font-size:1.1rem;max-width:38rem;line-height:1.7;color:#4A5468}
+
+/* products */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:2rem;margin-top:3rem}
+.card{background:var(--paper);border:3px solid var(--navy);border-radius:22px;overflow:hidden;box-shadow:7px 7px 0 var(--navy);transition:.18s;display:flex;flex-direction:column;position:relative}
+.card:hover{transform:translate(-3px,-3px) rotate(-.4deg);box-shadow:11px 11px 0 var(--navy)}
+.card .ph{padding:1.6rem;display:flex;align-items:center;justify-content:center;min-height:250px}
+.card .ph img{max-height:230px;object-fit:contain;filter:drop-shadow(0 12px 18px rgba(31,58,95,.25))}
+.card .body{padding:0 1.6rem 1.7rem}
+.card h3{font-size:1.45rem;color:var(--navy);margin-bottom:.5rem}
+.card p{color:#4A5468;line-height:1.6;font-size:.98rem}
+.card .zh{font-weight:900;color:var(--red);font-size:1rem;margin-top:.7rem}
+.badge{position:absolute;top:14px;right:14px;background:var(--red);color:#fff;font-weight:800;font-size:.78rem;padding:7px 13px;border-radius:999px;border:2.5px solid var(--navy);transform:rotate(4deg);z-index:2}
+.badge.g{background:var(--kelly)} .badge.m{background:var(--matcha);color:var(--navy)}
+.ph.rice{background:radial-gradient(circle at 50% 30%,#9CC5E8,#7FB0DC)}
+.ph.soy{background:radial-gradient(circle at 50% 30%,#57C27E,var(--kelly))}
+.ph.was{background:radial-gradient(circle at 50% 30%,#A5D46A,var(--matcha))}
+
+/* story */
+.story{background:var(--navy);color:var(--cream);position:relative}
+.story .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:3.5rem;align-items:center}
+.story h2{color:#fff}
+.story p{color:#D8E2F2;line-height:1.75;margin-bottom:1.1rem;font-size:1.05rem}
+.story .hanzi{font-size:clamp(5rem,11vw,9rem);font-weight:900;color:transparent;-webkit-text-stroke:3px var(--gold);line-height:1.05;text-align:center}
+.story .hanzi small{display:block;font-family:'Archivo';font-size:1rem;color:var(--gold);-webkit-text-stroke:0;font-weight:800;letter-spacing:.25em;margin-top:1rem}
+.story .stamp{display:inline-block;background:var(--red);color:#fff;font-weight:800;padding:8px 18px;border-radius:8px;transform:rotate(-2deg);margin-top:.6rem;border:3px solid #fff}
+@media(max-width:880px){.story .wrap{grid-template-columns:1fr}}
+
+/* wholesale */
+.whole .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem;align-items:center}
+.whole img{border-radius:18px;border:3px solid var(--navy);box-shadow:8px 8px 0 var(--navy)}
+.whole ul{margin:1.4rem 0 2rem;list-style:none}
+.whole li{padding:10px 0 10px 40px;position:relative;font-size:1.03rem;color:#3B4356;font-weight:600}
+.whole li::before{content:"✔";position:absolute;left:0;top:6px;width:28px;height:28px;border-radius:50%;background:var(--matcha);color:var(--navy);font-weight:900;display:flex;align-items:center;justify-content:center;border:2.5px solid var(--navy);font-size:.85rem}
+@media(max-width:880px){.whole .wrap{grid-template-columns:1fr}}
+
+/* waves divider */
+.waves{display:block;width:100%;height:70px;margin-bottom:-1px}
+
+/* footer */
+footer{background:var(--navy-deep);color:#B9C6DC;padding:3.5rem 5vw 2.5rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:2rem;align-items:center;justify-content:space-between}
+footer .logo{display:flex;align-items:center;gap:12px;font-family:'Archivo Black';color:#fff;font-size:1.2rem}
+footer .logo svg{width:44px;height:44px}
+footer a{color:var(--gold);text-decoration:none;font-weight:700}
+footer .fine{width:100%;border-top:1px solid #31456B;padding-top:1.3rem;margin-top:1rem;font-size:.85rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="#top" aria-label="Baybos Foods home">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#1F3A5F"/><path d="M14 24 Q23 15 32 23 T50 23 M14 34 Q23 25 32 33 T50 33 M14 44 Q23 35 32 43 T50 43" stroke="#fff" stroke-width="4.5" fill="none" stroke-linecap="round"/></svg>
+    BAYBOS<span style="font-family:'Archivo';font-weight:600;letter-spacing:.3em">FOODS</span>
+  </a>
+  <div class="links">
+    <a href="#products">Products</a>
+    <a href="#story">Our story</a>
+    <a href="#wholesale">Wholesale</a>
+    <a class="cta" href="mailto:hello@baybosfoods.com">Get in touch</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="rays" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div>
+      <span class="kicker">百寶 · "A HUNDRED TREASURES"</span>
+      <h1>BIG ASIAN FLAVOR.<br><span class="hl">FRESH NEW ENERGY.</span></h1>
+      <p class="sub">Baybos Foods (say it: <em>bay-boss</em>) makes the pantry staples every Asian kitchen swears by — sushi-grade rice, honest soy sauce, wasabi with attitude — packed for a new generation of cooks, chefs and late-night snackers.</p>
+      <div class="btns">
+        <a class="btn primary" href="#products">See the goods ↓</a>
+        <a class="btn ghost" href="#wholesale">Wholesale &amp; foodservice</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <img class="bag" src="img/rice_bag_hero.png" alt="Baybos premium sushi rice 50 lb bag">
+      <img class="s1" src="img/wasabi.png" alt="Baybos prepared wasabi sachet">
+      <img class="s2" src="img/soy.png" alt="Baybos premium soy sauce sachet">
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <span>百寶食品 · SUSHI RICE · SOY SAUCE · WASABI · SEE-INSIDE PACKS · 百寶食品 · SUSHI RICE · SOY SAUCE · WASABI · SEE-INSIDE PACKS ·&nbsp;&nbsp;百寶食品 · SUSHI RICE · SOY SAUCE · WASABI · SEE-INSIDE PACKS · 百寶食品 · SUSHI RICE · SOY SAUCE · WASABI · SEE-INSIDE PACKS ·&nbsp;&nbsp;</span>
+</div>
+
+<section id="products">
+  <div class="wrap">
+    <span class="eyebrow">THE LINEUP</span>
+    <h2 class="title">Three staples. Zero compromise.</h2>
+    <p class="lead">Everything we make has one job: taste like the good stuff you grew up with — and look good doing it.</p>
+    <div class="grid">
+      <article class="card">
+        <span class="badge">CHEF FAVORITE</span>
+        <div class="ph rice"><img src="img/rice_bag.png" alt="Baybos Premium Sushi Rice, 50 lb medium grain bag"></div>
+        <div class="body">
+          <h3>Premium Sushi Rice</h3>
+          <p>Medium grain, milled for perfect sticky-yet-separate texture. The 50&nbsp;lb foodservice bag your sushi chef hides from other sushi chefs.</p>
+          <p class="zh tc">寿司米 · 50 LB</p>
+        </div>
+      </article>
+      <article class="card">
+        <span class="badge g">SEE-INSIDE PACK</span>
+        <div class="ph soy"><img src="img/soy.png" alt="Baybos premium soy sauce single-serve sachet, green design"></div>
+        <div class="body">
+          <h3>Soy Sauce Sachets</h3>
+          <p>Premium umami-rich soy in a single-serve 8&nbsp;mL sachet. Fully transparent back — what you see is exactly what you pour.</p>
+          <p class="zh tc">特選醤油 · SINGLE SERVE</p>
+        </div>
+      </article>
+      <article class="card">
+        <span class="badge m">HOT &amp; SPICY</span>
+        <div class="ph was"><img src="img/wasabi.png" alt="Baybos prepared wasabi single-serve sachet with transparent film"></div>
+        <div class="body">
+          <h3>Prepared Wasabi Sachets</h3>
+          <p>Japanese-style wasabi with a proper kick, 2.5&nbsp;g per hit. Clear-film pack — that green you see? That's the real deal inside.</p>
+          <p class="zh tc">練りわさび · SINGLE SERVE</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<svg class="waves" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 35 Q 180 0 360 35 T 720 35 T 1080 35 T 1440 35 L 1440 70 L 0 70 Z" fill="#1F3A5F"/></svg>
+
+<section class="story" id="story" style="padding-top:4rem">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow" style="background:var(--gold);color:var(--navy)">OUR STORY</span>
+      <h2 class="title">Born American.<br>Raised on Asian flavor.</h2>
+      <p>Baybos is what happens when the kid who grew up running around the family import warehouse gets to design the brand. Two kitchens, two languages, one obsession: food that would make both grandmas proud.</p>
+      <p>Our name comes from <strong class="tc" style="color:var(--gold)">百寶</strong> — "a hundred treasures." That's what a real Asian pantry is: little packets, sauces and sacks of rice that turn any table into a feast.</p>
+      <p>No gatekeeping. No watered-down "fusion." Just the staples, done right, with packaging you can actually see through — literally.</p>
+      <span class="stamp">EST. WITH ATTITUDE · 2026</span>
+    </div>
+    <div class="hanzi tc" aria-hidden="true">百寶<br>食品<small>BAY·BOSS — A HUNDRED TREASURES</small></div>
+  </div>
+</section>
+
+<svg class="waves" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true" style="transform:scaleY(-1)"><path d="M0 35 Q 180 0 360 35 T 720 35 T 1080 35 T 1440 35 L 1440 70 L 0 70 Z" fill="#1F3A5F"/></svg>
+
+<section class="whole" id="wholesale">
+  <div class="wrap">
+    <div><img src="img/box.png" alt="Baybos Foods kraft dispenser case for condiment sachets"></div>
+    <div>
+      <span class="eyebrow">WHOLESALE &amp; FOODSERVICE</span>
+      <h2 class="title">Case-ready for your counter.</h2>
+      <p class="lead">Restaurants, dark kitchens, markets: our sachets ship in a classic kraft dispenser case with a contents checklist — grab, check, done.</p>
+      <ul>
+        <li>Single-serve soy sauce &amp; wasabi, ready for takeout bags</li>
+        <li>Transparent packs — your customers see the quality</li>
+        <li>Bilingual labeling (EN/ES) with lot &amp; best-by coding</li>
+        <li>Premium sushi rice in 50 lb foodservice bags</li>
+      </ul>
+      <a class="btn primary" href="mailto:hello@baybosfoods.com?subject=Wholesale%20inquiry%20—%20Baybos%20Foods">Talk wholesale →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="logo">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#0F1D36"/><circle cx="32" cy="32" r="30" fill="none" stroke="#fff" stroke-width="2"/><path d="M14 24 Q23 15 32 23 T50 23 M14 34 Q23 25 32 33 T50 33 M14 44 Q23 35 32 43 T50 43" stroke="#fff" stroke-width="4.5" fill="none" stroke-linecap="round"/></svg>
+      BAYBOS FOODS
+    </div>
+    <div>
+      Wholesale &amp; general: <a href="mailto:hello@baybosfoods.com">hello@baybosfoods.com</a>
+    </div>
+    <div class="fine">
+      <span>© 2026 Baybos Foods · <span class="tc">百寶食品</span> · All rights reserved.</span>
+      <span>Sushi rice · Soy sauce · Wasabi</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
