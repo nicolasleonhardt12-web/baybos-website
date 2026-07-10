@@ -81,6 +81,19 @@ p.lead{font-size:1.1rem;max-width:38rem;line-height:1.7;color:#4A5468}
 .ph.rice{background:radial-gradient(circle at 50% 30%,#9CC5E8,#7FB0DC)}
 .ph.soy{background:radial-gradient(circle at 50% 30%,#57C27E,var(--kelly))}
 .ph.was{background:radial-gradient(circle at 50% 30%,#A5D46A,var(--matcha))}
+.ph.bot{background:radial-gradient(circle at 50% 30%,#F7DC8E,#EBBE52)}
+.ph.oys{background:radial-gradient(circle at 50% 30%,#E8705B,#C0392B)}
+
+/* heritage — retro poster band */
+.heritage{background:#A31F1F;position:relative;overflow:hidden;padding:4.5rem 5vw;border-top:3px solid var(--navy)}
+.heritage .sun{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 135%, #B62A22 0deg 11deg, #A31F1F 11deg 22deg)}
+.heritage .inner{position:relative;max-width:880px;margin:0 auto;text-align:center;border:4px double var(--gold);border-radius:10px;padding:3.2rem 2rem;color:#FFF3DC}
+.heritage .stars{color:var(--gold);font-size:1.4rem;letter-spacing:.6em;margin-bottom:1.2rem}
+.heritage h2{font-family:'Noto Sans TC',sans-serif;font-weight:900;font-size:clamp(2rem,5vw,3.4rem);color:#FFF3DC;margin-bottom:.8rem}
+.heritage p{max-width:36rem;margin:0 auto 1rem;line-height:1.7;color:#FFE0C9;font-size:1.05rem}
+.heritage .since{display:inline-block;background:var(--gold);color:#7A1414;font-weight:800;padding:8px 20px;border-radius:6px;letter-spacing:.14em;font-size:.9rem;transform:rotate(-1.5deg);border:2.5px solid #7A1414}
+.seal{position:absolute;top:-26px;right:22px;width:96px;height:96px;background:#C62828;border:3px solid #FFF3DC;border-radius:12px;transform:rotate(6deg);display:grid;grid-template-columns:1fr 1fr;place-items:center;font-family:'Noto Sans TC',sans-serif;font-weight:900;font-size:1.6rem;color:#FFF3DC;box-shadow:4px 4px 0 rgba(0,0,0,.25);padding:8px}
+@media(max-width:720px){.seal{width:72px;height:72px;font-size:1.15rem;top:-18px;right:10px}}
 
 /* story */
 .story{background:var(--navy);color:var(--cream);position:relative}
@@ -148,13 +161,13 @@ footer .fine{width:100%;border-top:1px solid #31456B;padding-top:1.3rem;margin-t
 </header>
 
 <div class="marquee" aria-hidden="true">
-  <span>百寶食品 · SUSHI RICE · SOY SAUCE · WASABI · SEE-INSIDE PACKS · 百寶食品 · SUSHI RICE · SOY SAUCE · WASABI · SEE-INSIDE PACKS ·&nbsp;&nbsp;百寶食品 · SUSHI RICE · SOY SAUCE · WASABI · SEE-INSIDE PACKS · 百寶食品 · SUSHI RICE · SOY SAUCE · WASABI · SEE-INSIDE PACKS ·&nbsp;&nbsp;</span>
+  <span>百寶食品 ★ SUSHI RICE ★ SOY SAUCE ★ WASABI ★ SEE-INSIDE PACKS ★ 百寶食品 ★ SUSHI RICE ★ SOY SAUCE ★ WASABI ★ SEE-INSIDE PACKS ★&nbsp;&nbsp;百寶食品 ★ SUSHI RICE ★ SOY SAUCE ★ WASABI ★ SEE-INSIDE PACKS ★ 百寶食品 ★ SUSHI RICE ★ SOY SAUCE ★ WASABI ★ SEE-INSIDE PACKS ★&nbsp;&nbsp;</span>
 </div>
 
 <section id="products">
   <div class="wrap">
     <span class="eyebrow">THE LINEUP</span>
-    <h2 class="title">Three staples. Zero compromise.</h2>
+    <h2 class="title">Five staples. Zero compromise.</h2>
     <p class="lead">Everything we make has one job: taste like the good stuff you grew up with — and look good doing it.</p>
     <div class="grid">
       <article class="card">
@@ -164,6 +177,24 @@ footer .fine{width:100%;border-top:1px solid #31456B;padding-top:1.3rem;margin-t
           <h3>Premium Sushi Rice</h3>
           <p>Medium grain, milled for perfect sticky-yet-separate texture. The 50&nbsp;lb foodservice bag your sushi chef hides from other sushi chefs.</p>
           <p class="zh tc">寿司米 · 50 LB</p>
+        </div>
+      </article>
+      <article class="card">
+        <span class="badge">BEST SELLER</span>
+        <div class="ph bot"><img src="img/soy_bottles.png" alt="Baybos premium soy sauce 500 mL bottle and 1 gallon jug"></div>
+        <div class="body">
+          <h3>Soy Sauce — Bottle &amp; Gallon</h3>
+          <p>Our best-selling brew in restaurant sizes: the 500&nbsp;mL table bottle and the back-of-house gallon that never lasts the week.</p>
+          <p class="zh tc">特選醤油 · 500 mL / 1 GAL</p>
+        </div>
+      </article>
+      <article class="card">
+        <span class="badge">WOK ESSENTIAL</span>
+        <div class="ph oys"><img src="img/oyster_bottles.png" alt="Baybos oyster sauce 510 g bottle and 5 lb tin"></div>
+        <div class="body">
+          <h3>Oyster Sauce — Bottle &amp; 5 lb</h3>
+          <p>Rich, glossy, wok-ready. The 510&nbsp;g bottle for the table and the 5&nbsp;lb tin for kitchens that stir-fry all day.</p>
+          <p class="zh tc">蠔油 · 510 g / 5 LB</p>
         </div>
       </article>
       <article class="card">
@@ -188,7 +219,18 @@ footer .fine{width:100%;border-top:1px solid #31456B;padding-top:1.3rem;margin-t
   </div>
 </section>
 
-<svg class="waves" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 35 Q 180 0 360 35 T 720 35 T 1080 35 T 1440 35 L 1440 70 L 0 70 Z" fill="#1F3A5F"/></svg>
+<section class="heritage" aria-label="Baybos heritage">
+  <div class="sun" aria-hidden="true"></div>
+  <div class="inner">
+    <div class="seal tc" aria-hidden="true"><span>百</span><span>寶</span><span>食</span><span>品</span></div>
+    <div class="stars" aria-hidden="true">★ ★ ★ ★ ★</div>
+    <h2>老字號 · 新味道</h2>
+    <p>"An old-school name with a brand-new appetite." Since 2017 we've stocked the kitchens that feed the people — same recipes your 阿嬤 would salute, served with today's energy.</p>
+    <span class="since">百寶牌 · TRUSTED SINCE 2017</span>
+  </div>
+</section>
+
+<svg class="waves" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true" style="background:#A31F1F"><path d="M0 35 Q 180 0 360 35 T 720 35 T 1080 35 T 1440 35 L 1440 70 L 0 70 Z" fill="#1F3A5F"/></svg>
 
 <section class="story" id="story" style="padding-top:4rem">
   <div class="wrap">
@@ -198,7 +240,7 @@ footer .fine{width:100%;border-top:1px solid #31456B;padding-top:1.3rem;margin-t
       <p>Baybos is what happens when the kid who grew up running around the family import warehouse gets to design the brand. Two kitchens, two languages, one obsession: food that would make both grandmas proud.</p>
       <p>Our name comes from <strong class="tc" style="color:var(--gold)">百寶</strong> — "a hundred treasures." That's what a real Asian pantry is: little packets, sauces and sacks of rice that turn any table into a feast.</p>
       <p>No gatekeeping. No watered-down "fusion." Just the staples, done right, with packaging you can actually see through — literally.</p>
-      <span class="stamp">EST. WITH ATTITUDE · 2026</span>
+      <span class="stamp">EST. WITH ATTITUDE · 2017</span>
     </div>
     <div class="hanzi tc" aria-hidden="true">百寶<br>食品<small>BAY·BOSS — A HUNDRED TREASURES</small></div>
   </div>
