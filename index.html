@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Baybos Foods — A Hundred Treasures for Your Pantry · 百寶食品</title>
-<meta name="description" content="Baybos Foods — premium sushi rice, soy sauce and wasabi sachets. Asian pantry staples with new-generation energy. 百寶食品.">
+<title>Baybos Foods — Cien tesoros para su despensa · 百寶食品</title>
+<meta name="description" content="Baybos Foods — arroz premium para sushi, salsa de soya, salsa de ostras y wasabi. Básicos asiáticos con energía nueva. 百寶食品.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,400;0,600;0,800;1,600&family=Noto+Sans+TC:wght@700;900&display=swap" rel="stylesheet">
@@ -26,11 +26,13 @@ a{color:inherit}
 nav{position:sticky;top:0;z-index:50;background:var(--cream);border-bottom:3px solid var(--navy);padding:14px 5vw;display:flex;align-items:center;gap:14px}
 nav .logo{display:flex;align-items:center;gap:12px;font-family:'Archivo Black';font-size:1.15rem;color:var(--navy);text-decoration:none}
 nav .logo svg{width:42px;height:42px}
-nav .links{margin-left:auto;display:flex;gap:26px;align-items:center;font-weight:800;font-size:.95rem}
+nav .links{margin-left:auto;display:flex;gap:22px;align-items:center;font-weight:800;font-size:.95rem}
 nav .links a{text-decoration:none;color:var(--navy)}
 nav .links a:hover{color:var(--red)}
 nav .cta{background:var(--red);color:#fff!important;padding:10px 20px;border-radius:999px;border:3px solid var(--navy);box-shadow:3px 3px 0 var(--navy);transition:.15s}
 nav .cta:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--navy);color:#fff!important}
+#langBtn{background:var(--navy);color:var(--gold);font-weight:800;font-size:.85rem;padding:9px 14px;border-radius:999px;border:3px solid var(--navy-deep);cursor:pointer;letter-spacing:.06em;font-family:'Archivo';transition:.15s}
+#langBtn:hover{background:var(--navy-deep)}
 @media(max-width:720px){nav .links a:not(.cta){display:none}}
 
 /* hero */
@@ -47,16 +49,16 @@ nav .cta:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--navy);c
 .btn.ghost{background:transparent;color:#fff;border-color:#fff}
 .btn:hover{transform:translate(-2px,-2px)}
 .btn.primary:hover{box-shadow:6px 6px 0 var(--navy-deep)}
-.hero-art{position:relative;min-height:420px}
-.hero-art img{position:absolute;border-radius:10px}
-.hero-art .bag{width:62%;left:0;top:4%;transform:rotate(-4deg);z-index:2;border-radius:14px;box-shadow:0 24px 40px rgba(0,0,0,.4)}
-.hero-art .s1{width:52%;right:-2%;top:16%;transform:rotate(7deg);z-index:3;border:4px solid #fff;box-shadow:0 18px 30px rgba(0,0,0,.45)}
-.hero-art .s2{width:52%;right:8%;top:52%;transform:rotate(-6deg);z-index:4;border:4px solid #fff;box-shadow:0 18px 30px rgba(0,0,0,.45)}
-@media(max-width:880px){.hero-inner{grid-template-columns:1fr}.hero-art{min-height:340px;margin-bottom:2rem}}
+.hero-art{position:relative;min-height:440px}
+.hero-art img{position:absolute;border-radius:12px}
+.hero-art .bag{width:58%;left:0;top:2%;transform:rotate(-4deg);z-index:2;border-radius:14px;box-shadow:0 24px 40px rgba(0,0,0,.4)}
+.hero-art .s1{width:46%;right:0;top:6%;transform:rotate(6deg);z-index:3;border:5px solid #fff;box-shadow:0 18px 30px rgba(0,0,0,.45)}
+.hero-art .s2{width:46%;right:9%;top:50%;transform:rotate(-5deg);z-index:4;border:5px solid #fff;box-shadow:0 18px 30px rgba(0,0,0,.45)}
+@media(max-width:880px){.hero-inner{grid-template-columns:1fr}.hero-art{min-height:360px;margin-bottom:2rem}}
 
 /* marquee */
 .marquee{background:var(--gold);border-top:3px solid var(--navy);border-bottom:3px solid var(--navy);overflow:hidden;white-space:nowrap;padding:12px 0;position:relative;z-index:5}
-.marquee span{display:inline-block;font-family:'Archivo Black';font-size:1.05rem;color:var(--navy);animation:scroll 28s linear infinite;padding-right:0}
+.marquee span{display:inline-block;font-family:'Archivo Black';font-size:1.05rem;color:var(--navy);animation:scroll 28s linear infinite}
 @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* sections */
@@ -70,19 +72,20 @@ p.lead{font-size:1.1rem;max-width:38rem;line-height:1.7;color:#4A5468}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:2rem;margin-top:3rem}
 .card{background:var(--paper);border:3px solid var(--navy);border-radius:22px;overflow:hidden;box-shadow:7px 7px 0 var(--navy);transition:.18s;display:flex;flex-direction:column;position:relative}
 .card:hover{transform:translate(-3px,-3px) rotate(-.4deg);box-shadow:11px 11px 0 var(--navy)}
-.card .ph{padding:1.6rem;display:flex;align-items:center;justify-content:center;min-height:250px}
-.card .ph img{max-height:230px;object-fit:contain;filter:drop-shadow(0 12px 18px rgba(31,58,95,.25))}
-.card .body{padding:0 1.6rem 1.7rem}
-.card h3{font-size:1.45rem;color:var(--navy);margin-bottom:.5rem}
-.card p{color:#4A5468;line-height:1.6;font-size:.98rem}
+.card .ph{display:flex;align-items:center;justify-content:center;min-height:250px;padding:1.4rem}
+.card .ph img{max-height:240px;object-fit:contain;filter:drop-shadow(0 12px 18px rgba(31,58,95,.25))}
+.card .ph.photo{padding:0;border-bottom:3px solid var(--navy)}
+.card .ph.photo img{width:100%;height:290px;object-fit:cover;filter:none;max-height:none}
+.card .body{padding:1.2rem 1.6rem 1.7rem}
+.card h3{font-size:1.4rem;color:var(--navy);margin-bottom:.5rem}
+.card p{color:#4A5468;line-height:1.6;font-size:.97rem}
 .card .zh{font-weight:900;color:var(--red);font-size:1rem;margin-top:.7rem}
+.thumbs{display:flex;gap:10px;margin-top:.9rem}
+.thumbs img{width:66px;height:66px;object-fit:cover;border-radius:12px;border:2.5px solid var(--navy)}
 .badge{position:absolute;top:14px;right:14px;background:var(--red);color:#fff;font-weight:800;font-size:.78rem;padding:7px 13px;border-radius:999px;border:2.5px solid var(--navy);transform:rotate(4deg);z-index:2}
 .badge.g{background:var(--kelly)} .badge.m{background:var(--matcha);color:var(--navy)}
-.ph.rice{background:radial-gradient(circle at 50% 30%,#9CC5E8,#7FB0DC)}
-.ph.soy{background:radial-gradient(circle at 50% 30%,#57C27E,var(--kelly))}
 .ph.was{background:radial-gradient(circle at 50% 30%,#A5D46A,var(--matcha))}
-.ph.bot{background:radial-gradient(circle at 50% 30%,#F7DC8E,#EBBE52)}
-.ph.oys{background:radial-gradient(circle at 50% 30%,#E8705B,#C0392B)}
+.ph.soy{background:radial-gradient(circle at 50% 30%,#57C27E,var(--kelly))}
 
 /* heritage — retro poster band */
 .heritage{background:#A31F1F;position:relative;overflow:hidden;padding:4.5rem 5vw;border-top:3px solid var(--navy)}
@@ -113,7 +116,6 @@ p.lead{font-size:1.1rem;max-width:38rem;line-height:1.7;color:#4A5468}
 .whole li::before{content:"✔";position:absolute;left:0;top:6px;width:28px;height:28px;border-radius:50%;background:var(--matcha);color:var(--navy);font-weight:900;display:flex;align-items:center;justify-content:center;border:2.5px solid var(--navy);font-size:.85rem}
 @media(max-width:880px){.whole .wrap{grid-template-columns:1fr}}
 
-/* waves divider */
 .waves{display:block;width:100%;height:70px;margin-bottom:-1px}
 
 /* footer */
@@ -128,15 +130,16 @@ footer .fine{width:100%;border-top:1px solid #31456B;padding-top:1.3rem;margin-t
 <body>
 
 <nav>
-  <a class="logo" href="#top" aria-label="Baybos Foods home">
+  <a class="logo" href="#top" aria-label="Baybos Foods">
     <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#1F3A5F"/><path d="M14 24 Q23 15 32 23 T50 23 M14 34 Q23 25 32 33 T50 33 M14 44 Q23 35 32 43 T50 43" stroke="#fff" stroke-width="4.5" fill="none" stroke-linecap="round"/></svg>
     BAYBOS<span style="font-family:'Archivo';font-weight:600;letter-spacing:.3em">FOODS</span>
   </a>
   <div class="links">
-    <a href="#products">Products</a>
-    <a href="#story">Our story</a>
-    <a href="#wholesale">Wholesale</a>
-    <a class="cta" href="mailto:hello@baybosfoods.com">Get in touch</a>
+    <a href="#products" data-i18n="nav_products">Productos</a>
+    <a href="#story" data-i18n="nav_story">Nuestra historia</a>
+    <a href="#wholesale" data-i18n="nav_wholesale">Mayoreo</a>
+    <a class="cta" href="mailto:hello@baybosfoods.com" data-i18n="nav_cta">Escríbanos</a>
+    <button id="langBtn" aria-label="Switch language">EN</button>
   </div>
 </nav>
 
@@ -144,89 +147,96 @@ footer .fine{width:100%;border-top:1px solid #31456B;padding-top:1.3rem;margin-t
   <div class="rays" aria-hidden="true"></div>
   <div class="hero-inner">
     <div>
-      <span class="kicker">百寶 · "A HUNDRED TREASURES"</span>
-      <h1>BIG ASIAN FLAVOR.<br><span class="hl">FRESH NEW ENERGY.</span></h1>
-      <p class="sub">Baybos Foods (say it: <em>bay-boss</em>) makes the pantry staples every Asian kitchen swears by — sushi-grade rice, honest soy sauce, wasabi with attitude — packed for a new generation of cooks, chefs and late-night snackers.</p>
+      <span class="kicker" data-i18n="hero_kicker">百寶 · "CIEN TESOROS"</span>
+      <h1><span data-i18n="hero_h1a">GRAN SABOR ASIÁTICO.</span><br><span class="hl" data-i18n="hero_h1b">ENERGÍA NUEVA.</span></h1>
+      <p class="sub" data-i18n="hero_sub"></p>
       <div class="btns">
-        <a class="btn primary" href="#products">See the goods ↓</a>
-        <a class="btn ghost" href="#wholesale">Wholesale &amp; foodservice</a>
+        <a class="btn primary" href="#products" data-i18n="hero_btn1">Ver los productos ↓</a>
+        <a class="btn ghost" href="#wholesale" data-i18n="hero_btn2">Mayoreo y foodservice</a>
       </div>
     </div>
     <div class="hero-art" aria-hidden="true">
-      <img class="bag" src="img/rice_bag_hero.png" alt="Baybos premium sushi rice 50 lb bag">
-      <img class="s1" src="img/wasabi.png" alt="Baybos prepared wasabi sachet">
-      <img class="s2" src="img/soy.png" alt="Baybos premium soy sauce sachet">
+      <img class="bag" src="img/rice_bag_hero.png" alt="Arroz premium para sushi Baybos, saco de 50 lb">
+      <img class="s1" src="img/real_soy_795.jpg" alt="Salsa de soya Baybos 795 g">
+      <img class="s2" src="img/real_oyster_500.jpg" alt="Salsa de ostras Baybos 510 g">
     </div>
   </div>
 </header>
 
 <div class="marquee" aria-hidden="true">
-  <span>百寶食品 ★ SUSHI RICE ★ SOY SAUCE ★ WASABI ★ SEE-INSIDE PACKS ★ 百寶食品 ★ SUSHI RICE ★ SOY SAUCE ★ WASABI ★ SEE-INSIDE PACKS ★&nbsp;&nbsp;百寶食品 ★ SUSHI RICE ★ SOY SAUCE ★ WASABI ★ SEE-INSIDE PACKS ★ 百寶食品 ★ SUSHI RICE ★ SOY SAUCE ★ WASABI ★ SEE-INSIDE PACKS ★&nbsp;&nbsp;</span>
+  <span id="marqueeTxt"></span>
 </div>
 
 <section id="products">
   <div class="wrap">
-    <span class="eyebrow">THE LINEUP</span>
-    <h2 class="title">Five staples. Zero compromise.</h2>
-    <p class="lead">Everything we make has one job: taste like the good stuff you grew up with — and look good doing it.</p>
+    <span class="eyebrow" data-i18n="prod_eyebrow">EL CATÁLOGO</span>
+    <h2 class="title" data-i18n="prod_title">Los básicos, sin concesiones.</h2>
+    <p class="lead" data-i18n="prod_lead"></p>
     <div class="grid">
       <article class="card">
-        <span class="badge">CHEF FAVORITE</span>
-        <div class="ph rice"><img src="img/rice_bag.png" alt="Baybos Premium Sushi Rice, 50 lb medium grain bag"></div>
+        <span class="badge" data-i18n="c1_badge">FAVORITO DE CHEFS</span>
+        <div class="ph photo"><img src="img/rice_bag_hero.png" alt="Arroz premium para sushi Baybos 50 lb" style="object-position:top"></div>
         <div class="body">
-          <h3>Premium Sushi Rice</h3>
-          <p>Medium grain, milled for perfect sticky-yet-separate texture. The 50&nbsp;lb foodservice bag your sushi chef hides from other sushi chefs.</p>
+          <h3 data-i18n="c1_h">Arroz Premium para Sushi</h3>
+          <p data-i18n="c1_p"></p>
           <p class="zh tc">寿司米 · 50 LB</p>
         </div>
       </article>
       <article class="card">
-        <span class="badge">BEST SELLER</span>
-        <div class="ph bot"><img src="img/soy_bottles.png" alt="Baybos premium soy sauce lineup: 150 mL, 795 g, 5 lb jar, 1 gallon jug and 15 kg jar"></div>
+        <span class="badge" data-i18n="c2_badge">LA MÁS VENDIDA</span>
+        <div class="ph photo"><img src="img/real_soy_795.jpg" alt="Salsa de soya Baybos 795 g, foto real"></div>
         <div class="body">
-          <h3>Soy Sauce — Every Size</h3>
-          <p>One brew, five sizes: the 150&nbsp;mL table bottle, 795&nbsp;g, the 5&nbsp;lb jar, the back-of-house gallon and the 15&nbsp;kg kitchen jar.</p>
+          <h3 data-i18n="c2_h">Salsa de Soya — Todos los Tamaños</h3>
+          <p data-i18n="c2_p"></p>
+          <div class="thumbs">
+            <img src="img/real_soy_150.jpg" alt="Salsa de soya Baybos 150 mL">
+            <img src="img/real_soy_5lb.jpg" alt="Salsa de soya Baybos garrafa 5 lb">
+          </div>
           <p class="zh tc">特選醤油 · 150 mL → 15 KG</p>
         </div>
       </article>
       <article class="card">
-        <span class="badge">WOK ESSENTIAL</span>
-        <div class="ph oys"><img src="img/oyster_bottles.png" alt="Baybos oyster sauce lineup: 280 g, 500 g, 5 lb jar and 5 L jug"></div>
+        <span class="badge" data-i18n="c3_badge">ESENCIAL DEL WOK</span>
+        <div class="ph photo"><img src="img/real_oyster_500.jpg" alt="Salsa de ostras Baybos 510 g, foto real"></div>
         <div class="body">
-          <h3>Oyster Sauce — Every Size</h3>
-          <p>Rich, glossy, wok-ready — in 280&nbsp;g and 500&nbsp;g bottles, the 5&nbsp;lb jar and the 5&nbsp;L jug for kitchens that stir-fry all day.</p>
+          <h3 data-i18n="c3_h">Salsa de Ostras — Todos los Tamaños</h3>
+          <p data-i18n="c3_p"></p>
+          <div class="thumbs">
+            <img src="img/real_oyster_5lb.jpg" alt="Salsa de ostras Baybos lata 5 lb">
+          </div>
           <p class="zh tc">蠔油 · 280 g → 5 L</p>
         </div>
       </article>
       <article class="card">
-        <span class="badge g">SEE-INSIDE PACK</span>
-        <div class="ph soy"><img src="img/soy.png" alt="Baybos premium soy sauce single-serve sachet, green design"></div>
+        <span class="badge g" data-i18n="c4_badge">EMPAQUE TRANSPARENTE</span>
+        <div class="ph soy"><img src="img/soy_pouch.png" alt="Sobre individual de salsa de soya Baybos"></div>
         <div class="body">
-          <h3>Soy Sauce Sachets</h3>
-          <p>Premium umami-rich soy in a single-serve 8&nbsp;mL sachet. Fully transparent back — what you see is exactly what you pour.</p>
-          <p class="zh tc">特選醤油 · SINGLE SERVE</p>
+          <h3 data-i18n="c4_h">Sobres de Salsa de Soya</h3>
+          <p data-i18n="c4_p"></p>
+          <p class="zh tc">特選醤油 · SOBRE INDIVIDUAL</p>
         </div>
       </article>
       <article class="card">
-        <span class="badge m">HOT &amp; SPICY</span>
-        <div class="ph was"><img src="img/wasabi.png" alt="Baybos prepared wasabi single-serve sachet with transparent film"></div>
+        <span class="badge m" data-i18n="c5_badge">PICANTE</span>
+        <div class="ph was"><img src="img/wasabi_pouch.png" alt="Sobre individual de wasabi preparado Baybos"></div>
         <div class="body">
-          <h3>Prepared Wasabi Sachets</h3>
-          <p>Japanese-style wasabi with a proper kick, 2.5&nbsp;g per hit. Clear-film pack — that green you see? That's the real deal inside.</p>
-          <p class="zh tc">練りわさび · SINGLE SERVE</p>
+          <h3 data-i18n="c5_h">Sobres de Wasabi Preparado</h3>
+          <p data-i18n="c5_p"></p>
+          <p class="zh tc">練りわさび · SOBRE INDIVIDUAL</p>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<section class="heritage" aria-label="Baybos heritage">
+<section class="heritage" aria-label="Herencia Baybos">
   <div class="sun" aria-hidden="true"></div>
   <div class="inner">
     <div class="seal tc" aria-hidden="true"><span>百</span><span>寶</span><span>食</span><span>品</span></div>
     <div class="stars" aria-hidden="true">★ ★ ★ ★ ★</div>
     <h2>老字號 · 新味道</h2>
-    <p>"An old-school name with a brand-new appetite." Since 2017 we've stocked the kitchens that feed the people — same recipes your 阿嬤 would salute, served with today's energy.</p>
-    <span class="since">百寶牌 · TRUSTED SINCE 2017</span>
+    <p data-i18n="her_p"></p>
+    <span class="since" data-i18n="her_since">百寶牌 · DE CONFIANZA DESDE 2017</span>
   </div>
 </section>
 
@@ -235,14 +245,14 @@ footer .fine{width:100%;border-top:1px solid #31456B;padding-top:1.3rem;margin-t
 <section class="story" id="story" style="padding-top:4rem">
   <div class="wrap">
     <div>
-      <span class="eyebrow" style="background:var(--gold);color:var(--navy)">OUR STORY</span>
-      <h2 class="title">Born American.<br>Raised on Asian flavor.</h2>
-      <p>Baybos is what happens when the kid who grew up running around the family import warehouse gets to design the brand. Two kitchens, two languages, one obsession: food that would make both grandmas proud.</p>
-      <p>Our name comes from <strong class="tc" style="color:var(--gold)">百寶</strong> — "a hundred treasures." That's what a real Asian pantry is: little packets, sauces and sacks of rice that turn any table into a feast.</p>
-      <p>No gatekeeping. No watered-down "fusion." Just the staples, done right, with packaging you can actually see through — literally.</p>
-      <span class="stamp">EST. WITH ATTITUDE · 2017</span>
+      <span class="eyebrow" style="background:var(--gold);color:var(--navy)" data-i18n="story_eyebrow">NUESTRA HISTORIA</span>
+      <h2 class="title" data-i18n-html="story_h">Nacidos en América.<br>Criados con sabor asiático.</h2>
+      <p data-i18n="story_p1"></p>
+      <p data-i18n-html="story_p2"></p>
+      <p data-i18n="story_p3"></p>
+      <span class="stamp" data-i18n="story_stamp">FUNDADOS CON ACTITUD · 2017</span>
     </div>
-    <div class="hanzi tc" aria-hidden="true">百寶<br>食品<small>BAY·BOSS — A HUNDRED TREASURES</small></div>
+    <div class="hanzi tc" aria-hidden="true">百寶<br>食品<small data-i18n="hanzi_small">BAY·BOSS — CIEN TESOROS</small></div>
   </div>
 </section>
 
@@ -250,18 +260,18 @@ footer .fine{width:100%;border-top:1px solid #31456B;padding-top:1.3rem;margin-t
 
 <section class="whole" id="wholesale">
   <div class="wrap">
-    <div><img src="img/box.png" alt="Baybos Foods kraft dispenser case for condiment sachets"></div>
+    <div><img src="img/box.png" alt="Caja dispensadora kraft Baybos Foods para sobres de condimentos"></div>
     <div>
-      <span class="eyebrow">WHOLESALE &amp; FOODSERVICE</span>
-      <h2 class="title">Case-ready for your counter.</h2>
-      <p class="lead">Restaurants, dark kitchens, markets: our sachets ship in a classic kraft dispenser case with a contents checklist — grab, check, done.</p>
+      <span class="eyebrow" data-i18n="ws_eyebrow">MAYOREO Y FOODSERVICE</span>
+      <h2 class="title" data-i18n="ws_h">Listos para su mostrador.</h2>
+      <p class="lead" data-i18n="ws_lead"></p>
       <ul>
-        <li>Single-serve soy sauce &amp; wasabi, ready for takeout bags</li>
-        <li>Transparent packs — your customers see the quality</li>
-        <li>Bilingual labeling (EN/ES) with lot &amp; best-by coding</li>
-        <li>Premium sushi rice in 50 lb foodservice bags</li>
+        <li data-i18n="ws_li1"></li>
+        <li data-i18n="ws_li2"></li>
+        <li data-i18n="ws_li3"></li>
+        <li data-i18n="ws_li4"></li>
       </ul>
-      <a class="btn primary" href="mailto:hello@baybosfoods.com?subject=Wholesale%20inquiry%20—%20Baybos%20Foods">Talk wholesale →</a>
+      <a class="btn primary" href="mailto:hello@baybosfoods.com?subject=Mayoreo%20—%20Baybos%20Foods" data-i18n="ws_btn">Hablemos de mayoreo →</a>
     </div>
   </div>
 </section>
@@ -273,14 +283,125 @@ footer .fine{width:100%;border-top:1px solid #31456B;padding-top:1.3rem;margin-t
       BAYBOS FOODS
     </div>
     <div>
-      Wholesale &amp; general: <a href="mailto:hello@baybosfoods.com">hello@baybosfoods.com</a>
+      <span data-i18n="f_contact">Mayoreo y ventas:</span> <a href="mailto:hello@baybosfoods.com">hello@baybosfoods.com</a>
     </div>
     <div class="fine">
-      <span>© 2026 Baybos Foods · <span class="tc">百寶食品</span> · All rights reserved.</span>
-      <span>Sushi rice · Soy sauce · Wasabi</span>
+      <span data-i18n-html="f_fine1">© 2026 Baybos Foods · <span class="tc">百寶食品</span> · Todos los derechos reservados.</span>
+      <span data-i18n="f_fine2">Arroz para sushi · Salsa de soya · Salsa de ostras · Wasabi</span>
     </div>
   </div>
 </footer>
+
+<script>
+const I18N = {
+  es: {
+    _title: "Baybos Foods — Cien tesoros para su despensa · 百寶食品",
+    _marquee: "百寶食品 ★ ARROZ PARA SUSHI ★ SALSA DE SOYA ★ SALSA DE OSTRAS ★ WASABI ★ EMPAQUES TRANSPARENTES ★ ",
+    nav_products: "Productos", nav_story: "Nuestra historia", nav_wholesale: "Mayoreo", nav_cta: "Escríbanos",
+    hero_kicker: "百寶 · “CIEN TESOROS”",
+    hero_h1a: "GRAN SABOR ASIÁTICO.", hero_h1b: "ENERGÍA NUEVA.",
+    hero_sub: "Baybos Foods (se dice: bei-bos) hace los básicos que toda cocina asiática exige — arroz para sushi, salsa de soya de verdad, salsa de ostras y wasabi con carácter — para una nueva generación de cocineros, chefs y antojados de medianoche.",
+    hero_btn1: "Ver los productos ↓", hero_btn2: "Mayoreo y foodservice",
+    prod_eyebrow: "EL CATÁLOGO", prod_title: "Los básicos, sin concesiones.",
+    prod_lead: "Todo lo que hacemos tiene un solo trabajo: saber como lo bueno de siempre — y verse bien haciéndolo.",
+    c1_badge: "FAVORITO DE CHEFS", c1_h: "Arroz Premium para Sushi",
+    c1_p: "Grano medio, pulido para esa textura pegajosa-pero-suelta perfecta. El saco de 50 lb que su sushi chef le esconde a los demás.",
+    c2_badge: "LA MÁS VENDIDA", c2_h: "Salsa de Soya — Todos los Tamaños",
+    c2_p: "Una sola receta, cinco tamaños: botella de mesa de 150 mL, botella de 795 g, tarro de 5 lb, galón y tarro de cocina de 15 kg.",
+    c3_badge: "ESENCIAL DEL WOK", c3_h: "Salsa de Ostras — Todos los Tamaños",
+    c3_p: "Espesa, brillante y lista para el wok — botellas de 280 g y 510 g, tarro de 5 lb y garrafa de 5 L para cocinas que saltean todo el día.",
+    c4_badge: "EMPAQUE TRANSPARENTE", c4_h: "Sobres de Salsa de Soya",
+    c4_p: "Soya premium en sobre individual de 8 mL. Reverso 100% transparente: lo que ve es exactamente lo que sirve.",
+    c5_badge: "PICANTE", c5_h: "Sobres de Wasabi Preparado",
+    c5_p: "Wasabi estilo japonés con carácter, 2.5 g por sobre. Empaque transparente: ese verde que ve es el producto real.",
+    her_p: "“Una marca de siempre, con hambre de hoy.” Desde 2017 surtimos las cocinas que alimentan a la gente — las mismas recetas que su abuela aprobaría, servidas con la energía de ahora.",
+    her_since: "百寶牌 · DE CONFIANZA DESDE 2017",
+    story_eyebrow: "NUESTRA HISTORIA",
+    story_h: "Nacidos en América.<br>Criados con sabor asiático.",
+    story_p1: "Baybos es lo que pasa cuando el niño que creció corriendo por la bodega de importaciones de la familia por fin diseña la marca. Dos cocinas, dos idiomas y una sola obsesión: comida que enorgullezca a las dos abuelas.",
+    story_p2: "Nuestro nombre viene de <strong class='tc' style='color:var(--gold)'>百寶</strong> — “cien tesoros”. Eso es una despensa asiática de verdad: sobres, salsas y sacos de arroz que convierten cualquier mesa en un banquete.",
+    story_p3: "Sin secretos y sin “fusión” aguada. Solo los básicos, bien hechos, con empaques que se dejan ver por dentro — literalmente.",
+    story_stamp: "FUNDADOS CON ACTITUD · 2017",
+    hanzi_small: "BAY·BOSS — CIEN TESOROS",
+    ws_eyebrow: "MAYOREO Y FOODSERVICE", ws_h: "Listos para su mostrador.",
+    ws_lead: "Restaurantes, cocinas ocultas, tiendas: nuestros sobres llegan en una caja dispensadora kraft con lista de contenido — tomar, marcar, listo.",
+    ws_li1: "Sobres individuales de soya y wasabi, listos para la bolsa de llevar",
+    ws_li2: "Empaques transparentes — sus clientes ven la calidad",
+    ws_li3: "Etiquetado bilingüe (ES/EN) con lote y fecha de vencimiento",
+    ws_li4: "Arroz premium para sushi en sacos foodservice de 50 lb",
+    ws_btn: "Hablemos de mayoreo →",
+    f_contact: "Mayoreo y ventas:",
+    f_fine1: "© 2026 Baybos Foods · <span class='tc'>百寶食品</span> · Todos los derechos reservados.",
+    f_fine2: "Arroz para sushi · Salsa de soya · Salsa de ostras · Wasabi",
+    _langBtn: "EN"
+  },
+  en: {
+    _title: "Baybos Foods — A Hundred Treasures for Your Pantry · 百寶食品",
+    _marquee: "百寶食品 ★ SUSHI RICE ★ SOY SAUCE ★ OYSTER SAUCE ★ WASABI ★ SEE-INSIDE PACKS ★ ",
+    nav_products: "Products", nav_story: "Our story", nav_wholesale: "Wholesale", nav_cta: "Get in touch",
+    hero_kicker: "百寶 · “A HUNDRED TREASURES”",
+    hero_h1a: "BIG ASIAN FLAVOR.", hero_h1b: "FRESH NEW ENERGY.",
+    hero_sub: "Baybos Foods (say it: bay-boss) makes the pantry staples every Asian kitchen swears by — sushi-grade rice, honest soy sauce, oyster sauce and wasabi with attitude — packed for a new generation of cooks, chefs and late-night snackers.",
+    hero_btn1: "See the goods ↓", hero_btn2: "Wholesale & foodservice",
+    prod_eyebrow: "THE LINEUP", prod_title: "The staples. Zero compromise.",
+    prod_lead: "Everything we make has one job: taste like the good stuff you grew up with — and look good doing it.",
+    c1_badge: "CHEF FAVORITE", c1_h: "Premium Sushi Rice",
+    c1_p: "Medium grain, milled for perfect sticky-yet-separate texture. The 50 lb foodservice bag your sushi chef hides from other sushi chefs.",
+    c2_badge: "BEST SELLER", c2_h: "Soy Sauce — Every Size",
+    c2_p: "One brew, five sizes: the 150 mL table bottle, the 795 g bottle, the 5 lb jar, the back-of-house gallon and the 15 kg kitchen jar.",
+    c3_badge: "WOK ESSENTIAL", c3_h: "Oyster Sauce — Every Size",
+    c3_p: "Rich, glossy, wok-ready — in 280 g and 510 g bottles, the 5 lb tin and the 5 L jug for kitchens that stir-fry all day.",
+    c4_badge: "SEE-INSIDE PACK", c4_h: "Soy Sauce Sachets",
+    c4_p: "Premium umami-rich soy in a single-serve 8 mL sachet. Fully transparent back — what you see is exactly what you pour.",
+    c5_badge: "HOT & SPICY", c5_h: "Prepared Wasabi Sachets",
+    c5_p: "Japanese-style wasabi with a proper kick, 2.5 g per hit. Clear-film pack — that green you see? That's the real deal inside.",
+    her_p: "“An old-school name with a brand-new appetite.” Since 2017 we've stocked the kitchens that feed the people — the same recipes your grandma would salute, served with today's energy.",
+    her_since: "百寶牌 · TRUSTED SINCE 2017",
+    story_eyebrow: "OUR STORY",
+    story_h: "Born American.<br>Raised on Asian flavor.",
+    story_p1: "Baybos is what happens when the kid who grew up running around the family import warehouse gets to design the brand. Two kitchens, two languages, one obsession: food that would make both grandmas proud.",
+    story_p2: "Our name comes from <strong class='tc' style='color:var(--gold)'>百寶</strong> — “a hundred treasures.” That's what a real Asian pantry is: little packets, sauces and sacks of rice that turn any table into a feast.",
+    story_p3: "No gatekeeping. No watered-down “fusion.” Just the staples, done right, with packaging you can actually see through — literally.",
+    story_stamp: "EST. WITH ATTITUDE · 2017",
+    hanzi_small: "BAY·BOSS — A HUNDRED TREASURES",
+    ws_eyebrow: "WHOLESALE & FOODSERVICE", ws_h: "Case-ready for your counter.",
+    ws_lead: "Restaurants, dark kitchens, markets: our sachets ship in a classic kraft dispenser case with a contents checklist — grab, check, done.",
+    ws_li1: "Single-serve soy sauce & wasabi, ready for takeout bags",
+    ws_li2: "Transparent packs — your customers see the quality",
+    ws_li3: "Bilingual labeling (ES/EN) with lot & best-by coding",
+    ws_li4: "Premium sushi rice in 50 lb foodservice bags",
+    ws_btn: "Talk wholesale →",
+    f_contact: "Wholesale & general:",
+    f_fine1: "© 2026 Baybos Foods · <span class='tc'>百寶食品</span> · All rights reserved.",
+    f_fine2: "Sushi rice · Soy sauce · Oyster sauce · Wasabi",
+    _langBtn: "ES"
+  }
+};
+
+function setLang(lang) {
+  const d = I18N[lang];
+  document.documentElement.lang = lang;
+  document.title = d._title;
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const k = el.getAttribute("data-i18n");
+    if (d[k] !== undefined) el.textContent = d[k];
+  });
+  document.querySelectorAll("[data-i18n-html]").forEach(el => {
+    const k = el.getAttribute("data-i18n-html");
+    if (d[k] !== undefined) el.innerHTML = d[k];
+  });
+  document.getElementById("marqueeTxt").textContent = d._marquee.repeat(4);
+  document.getElementById("langBtn").textContent = d._langBtn;
+  try { localStorage.setItem("baybos_lang", lang); } catch (e) {}
+}
+let lang = "es";
+try { lang = localStorage.getItem("baybos_lang") || "es"; } catch (e) {}
+setLang(lang);
+document.getElementById("langBtn").addEventListener("click", () => {
+  lang = lang === "es" ? "en" : "es";
+  setLang(lang);
+});
+</script>
 
 </body>
 </html>
